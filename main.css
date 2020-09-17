@@ -125,6 +125,22 @@ main {
     text-align: center;
 }
 
+#review2 {
+    transform: translate(0, 20px);
+}
+
+#review3 {
+    transform: translate(0, 40px);
+}
+
+#r2 {
+    transform: translate(7%, 0);
+}
+
+#r3 {
+    transform: translate(14%, 0);
+}
+
 @media screen and (max-width: 800px) {
     .ratings div {
         font-size: 13px;
@@ -135,6 +151,13 @@ main {
     
     .ratings div p {
         display: block;
+    }
+    #r2 {
+        transform: translate(0%, 0);
+    }
+    
+    #r3 {
+        transform: translate(0%, 0);
     }
 }
 
