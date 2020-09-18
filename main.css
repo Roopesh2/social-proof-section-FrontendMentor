@@ -42,11 +42,12 @@ main {
 }
 
 .rt-container {
-    position: relative;
+    /* position: relative; */
     float: right;
+    margin-left: -15%;
 }
 .ratings div {
-    width: 400px;
+    width: 390px;
     background-color: hsl(300, 24%, 96%);
     padding: 15px;
     border-radius: 5px;
@@ -75,6 +76,8 @@ main {
     border-radius: 7px;
     width: 30%;
     height: 10%;
+    max-width: 320px;
+    min-height: 200px;
 }
 
 .review {
@@ -129,14 +132,6 @@ main {
 
 #review3 {
     transform: translate(0, 40px);
-}
-
-#r2 {
-    transform: translate(7%, 0);
-}
-
-#r3 {
-    transform: translate(14%, 0);
 }
 
 @media screen and (max-width: 800px) {
