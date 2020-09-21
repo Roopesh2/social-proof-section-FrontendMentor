@@ -13,6 +13,7 @@ body {
 }
 .bg-top, .bg-top-desk {
     position: absolute;
+    width: 100%;
 }
 .bg-top-desk {
     display: none;
