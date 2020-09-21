@@ -42,7 +42,7 @@ main {
 }
 
 .ratings div {
-    width: calc(100%);
+    max-width: 100%;
     background-color: hsl(300, 24%, 96%);
     padding: 10px;
     border-radius: 5px;
