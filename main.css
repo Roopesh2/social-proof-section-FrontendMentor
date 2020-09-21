@@ -11,8 +11,11 @@ body {
     padding: 0;
     margin: 0;
 }
-.bg-top {
+.bg-top, .bg-top-desk {
     position: absolute;
+}
+.bg-top-desk {
+    display: none;
 }
 main {
     padding: 20px;
@@ -210,6 +213,12 @@ main {
     }
     #r2 {
         margin-left: -7.5%;
+    }
+    .bg-top-desk {
+        display: block;
+    }
+    .bg-top {
+        display: none;
     }
 }
 

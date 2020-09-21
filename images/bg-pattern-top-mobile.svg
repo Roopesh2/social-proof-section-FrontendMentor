@@ -7,5 +7,5 @@
             <stop stop-color="#512051" offset="100%"/>
         </linearGradient>
     </defs>
-    <path d="M0 232c25.63-53.065 74.118-86.618 145.464-100.66 107.018-21.062 66.506-42.306 119.083-84.466C299.6 18.767 336.083 3.143 374 0v232H0z" transform="rotate(180 187 116)" fill="url(#a)" fill-rule="evenodd" opacity=".3"/>
+    <path d="M0 232c25.63-53.065 74.118-86.618 145.464-100.66 107.018-21.062 66.506-42.306 119.083-84.466C299.6 18.767 336.083 3.143 374 0v232H0z" transform="rotate(180 187 116)" fill="url(#a)" fill-rule="evenodd" opacity=".05"/>
 </svg>
