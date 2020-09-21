@@ -41,7 +41,7 @@ main {
     font-size: 14px;
     word-spacing: 2px;
     margin-top: -10px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .ratings div {
@@ -51,6 +51,7 @@ main {
     border-radius: 5px;
     margin-top: 10px;
     text-align: center;
+    font-weight: 700;
 }
 
 .reviews {
@@ -245,6 +246,9 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+    .info-container {
+        max-width: 440px;
+    }
     .info {
         font-size: 22px;
     }
@@ -252,7 +256,7 @@ main {
         font-size: 16px;
     }
     .rt-container {
-        width: 36%;
+        width: 39%;
     }
     .ratings div {
         max-width: 100%;
