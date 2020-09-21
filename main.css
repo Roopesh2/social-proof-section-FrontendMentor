@@ -4,8 +4,6 @@
 html {
     width: 100%;
     height: 100%;
-    background-image: url("./images/bg-pattern-top-desktop.svg");
-    background-repeat: no-repeat;
 }
 body {
     font-family: 'Spartan', sans-serif;
@@ -13,76 +11,63 @@ body {
     padding: 0;
     margin: 0;
 }
-
+.bg-top {
+    position: absolute;
+}
 main {
-    padding: 2%;
-    padding-left: 4%;
+    padding: 20px;
     width: 100%;
+    text-align: center;
 }
 .container {
     width: 100%;
     margin-bottom: 50px;
-    display: table;
-    padding: 10px;
     text-align: center;
 }
 .info-container {
-    float: left;
-    width: 320px;
+    width: calc(100%);
+    max-width: 340px;
 }
 
 .info {
     text-align: left;
+    font-size: 1em;
 }
 
 .info p {
-    font-size: 10px;
+    font-size: 14px;
     word-spacing: 2px;
     margin-top: -10px;
+    font-weight: 500;
 }
 
-.rt-container {
-    /* position: relative; */
-    float: right;
-    margin-left: -15%;
-}
 .ratings div {
-    width: 390px;
+    width: calc(100%);
     background-color: hsl(300, 24%, 96%);
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 10px;
-    text-align: left;
-}
-.ratings div p {
-    display: inline;
-}
-
-.ratings span {
-    margin-left: 20px;
+    text-align: center;
 }
 
 .reviews {
-    display: table;
-    text-align: center;
+    text-align: left;
     width: 100%;
+    margin-top: -10px;
 }
 .review-container {
-    display: inline-block;
     background-color: hsl(300, 43%, 22%);
     color: hsl(300, 24%, 96%);
-    margin: 10px;
     border-radius: 7px;
-    width: 30%;
-    height: 10%;
-    max-width: 320px;
-    min-height: 200px;
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
 }
 
 .review {
     width: 100%;
-    padding: 5%;
+    padding: 20px;
 }
 .review .about {
     display: table;
@@ -90,19 +75,22 @@ main {
 
 .review .about img {
     float: left;
-    width: 35px;
+    width: 40px;
     border-radius: 50%;
 }
-.review p {
-    font-size: 11px;
-    line-height: 16px;
-    margin-top: 20px;
+
+.review .msg {
+    height: 120px;
+    display: table-cell;
+    font-size: 13px;
+    line-height: 20px;
     text-align: left;
+    vertical-align: middle;
 }
 
 .review .about .details {
     position: relative;
-    right: -110%;
+    left: 60px;
     width: max-content;
 }
 
@@ -115,90 +103,178 @@ main {
     position: absolute;
     color: hsl(333, 80%, 67%);
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     width: 90px;
-    left: 3px;
+    top: 10px;
+    left: 0;
 }
+#review3 {
+    margin-right: 0;
+}
+
 .attribution p {
     width: 100%;
-    height: 50px;
-    padding-top: 15px;
+    padding: 10px;
     text-align: center;
 }
 
-#review2 {
-    transform: translate(0, 20px);
-}
-
-#review3 {
-    transform: translate(0, 40px);
-}
-
-@media screen and (max-width: 800px) {
-    .ratings div {
-        font-size: 13px;
-        width: 330px;
-        text-align: center;
-        padding-top: 1px;
-    }
-    
-    .ratings div p {
-        display: block;
-    }
-    #r2 {
-        transform: translate(0%, 0);
-    }
-    
-    #r3 {
-        transform: translate(0%, 0);
-    }
-}
-
-@media screen and (max-width: 730px) {
-    .info-container {
-        margin: auto;
-        float: none;
-    }
-
-    .rt-container {
-        margin: auto;
-        float: none;
-    }
-    
+@media screen and (min-width: 500px) {
     main {
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    html {
-        background-image: url("./images/bg-pattern-top-mobile.svg");
-    }
-    main {
-        padding: 10px;
+        padding: 6%;
     }
     .ratings div {
-        width: 80%;
-    }
-    .reviews {
-        display: block;
-    }
-    .review-container {
-        width: 80%;
+        text-align: left;
     }
     .ratings p {
-        height: auto;
+        display: inline;
+        margin-left: 10%;
+        margin-right: 4%;
     }
-    .ratings div {
-        text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .reviews {
+        display: table;
+        padding: 0;
+        
     }
-    .ratings div p {
-        display: block;
+    .review {
+        padding: 8%;
     }
-    .ratings p span{
-        margin-left: 0px;
+    .review-container {
+        display: inline-grid;
+        width: calc(33.33% - 10px);
+        height: min-content;
+        margin-right: 10px;
+    }
+    .r3 {
+        margin-right: 0;
+    }
+    .review .about img {
+        width: 30px;
+    }
+    .review .about .details {
+        left: calc(150%);
+    }
+    
+    .review .about .details h5 {
+        font-size: 12px;
+    }
+    .review .about .details p {
+        font-size: 11px;
+        top: 5px;
+    }
+    .review .msg {
+        font-size: 0.65em;
+        line-height: 14px;
+    }
+
+    #review2 {
+        transform: translateY(13px);
+    }
+
+    #review3 {
+        transform: translateY(26px);
+    }
+}
+@media screen and (min-width: 800px) {
+    .container {
+        display: table;
+    }
+
+    .info-container {
+        float: left;
     }
     .rt-container {
-        margin-top:50px;
+        float: right;
+    }
+    .ratings div {
+        width: auto;
+        background-color: hsl(300, 24%, 96%);
+        /* background-color: aqua; */
+        padding: 13px;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .ratings p {
+        margin: 0;
+        /* margin-left: 0;
+        margin-right: 0; */
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #r1 {
+        margin-left: -15%;
+    }
+    #r2 {
+        margin-left: -7.5%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .info {
+        font-size: 1.2em;
+    }
+    .review .msg {
+        font-size: 0.7em;
+        line-height: 16px;
+    }
+    .review-container {
+        width: 31%;
+        margin-right: 3.33333333%;
+    }
+    #review3 {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .info {
+        font-size: 22px;
+    }
+    .info p {
+        font-size: 16px;
+    }
+    .rt-container {
+        width: 33%;
+    }
+    .ratings div {
+        max-width: 100%;
+        font-size: 17px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .review .about img {
+        width: 50px;
+    }
+    
+    .review .msg {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .review .about .details {
+        left: 70px;
+    }
+    
+    .review .about .details h5 {
+        width: 150px;
+        font-size: 14px;
+        top: -15px;
+    }
+    .review .about .details p {
+        font-size: 14px;
+        width: 130px;
+        top: 15px;
+    }
+    #review2 {
+        transform: translateY(26px);
+    }
+
+    #review3 {
+        transform: translateY(52px);
     }
 }
