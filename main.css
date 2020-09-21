@@ -28,7 +28,7 @@ main {
     text-align: center;
 }
 .info-container {
-    width: calc(100%);
+    width: 100%;
     max-width: 340px;
 }
 
@@ -49,7 +49,6 @@ main {
     background-color: hsl(300, 24%, 96%);
     padding: 10px;
     border-radius: 5px;
-    /* margin: auto; */
     margin-top: 10px;
     text-align: center;
 }
@@ -192,7 +191,7 @@ main {
         float: right;
     }
     .ratings div {
-        width: auto;
+        min-width: 400px;
         background-color: hsl(300, 24%, 96%);
         /* background-color: aqua; */
         padding: 13px;
@@ -202,12 +201,18 @@ main {
     }
     .ratings p {
         margin: 0;
-        /* margin-left: 0;
-        margin-right: 0; */
+        margin-left: 2%;
+        margin-right: 3%;
     }
 }
 
 @media screen and (min-width: 850px) {
+    .info-container {
+        max-width: 430px;
+    }
+    .info h1 {
+        max-width: 340px;
+    }
     #r1 {
         margin-left: -15%;
     }
