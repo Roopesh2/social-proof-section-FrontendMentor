@@ -1,302 +1,302 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 body {
-    font-family: 'Spartan', sans-serif;
-    color: hsl(300, 43%, 22%);
-    padding: 0;
-    margin: 0;
+  font-family: "Spartan", sans-serif;
+  color: hsl(300, 43%, 22%);
+  padding: 0;
+  margin: 0;
 }
-.bg-top, .bg-top-desk {
-    position: absolute;
-    width: 100%;
+.bg-top,
+.bg-top-desk {
+  position: absolute;
+  width: 100%;
 }
 .bg-top-desk {
-    display: none;
+  display: none;
 }
 main {
-    padding: 20px;
-    width: 100%;
-    text-align: center;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
 }
 .container {
-    width: 100%;
-    margin-bottom: 50px;
-    text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .info-container {
-    width: 100%;
-    max-width: 340px;
+  width: 100%;
+  max-width: 340px;
 }
 
 .info {
-    text-align: left;
-    font-size: 1em;
+  text-align: left;
+  font-size: 1em;
 }
 
 .info p {
-    font-size: 14px;
-    word-spacing: 2px;
-    margin-top: -10px;
-    font-weight: 400;
+  font-size: 14px;
+  word-spacing: 2px;
+  margin-top: -10px;
+  font-weight: 400;
 }
 
 .ratings div {
-    max-width: 100%;
-    background-color: hsl(300, 24%, 96%);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: 700;
+  max-width: 100%;
+  background-color: hsl(300, 24%, 96%);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .reviews {
-    text-align: left;
-    width: 100%;
-    margin-top: -10px;
+  text-align: left;
+  width: 100%;
+  margin-top: -10px;
 }
 .review-container {
-    background-color: hsl(300, 43%, 22%);
-    color: hsl(300, 24%, 96%);
-    border-radius: 7px;
-    width: 100%;
-    height: 200px;
-    margin-top: 15px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  border-radius: 7px;
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
 }
 
 .review {
-    width: 100%;
-    padding: 20px;
+  width: 100%;
+  padding: 20px;
 }
 .review .about {
-    display: table;
+  display: table;
 }
 
 .review .about img {
-    float: left;
-    width: 40px;
-    border-radius: 50%;
+  float: left;
+  width: 40px;
+  border-radius: 50%;
 }
 
 .review .msg {
-    height: 120px;
-    display: table-cell;
-    font-size: 13px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: middle;
+  height: 120px;
+  display: table-cell;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .review .about .details {
-    position: relative;
-    left: 60px;
-    width: max-content;
+  position: relative;
+  left: 60px;
+  width: max-content;
 }
 
 .review .about .details h5 {
-    position: absolute;
-    width: 100px;
-    top: -18px;
+  position: absolute;
+  width: 100px;
+  top: -18px;
 }
 .review .about .details p {
-    position: absolute;
-    color: hsl(333, 80%, 67%);
-    width: 100%;
-    font-size: 12px;
-    width: 90px;
-    top: 10px;
-    left: 0;
+  position: absolute;
+  color: hsl(333, 80%, 67%);
+  width: 100%;
+  font-size: 12px;
+  width: 90px;
+  top: 10px;
+  left: 0;
 }
 #review3 {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .attribution p {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 
 @media screen and (min-width: 500px) {
-    main {
-        padding: 6%;
-    }
-    .ratings div {
-        text-align: left;
-    }
-    .ratings p {
-        display: inline;
-        margin-left: 10%;
-        margin-right: 4%;
-    }
+  main {
+    padding: 6%;
+  }
+  .ratings div {
+    text-align: left;
+  }
+  .ratings p {
+    display: inline;
+    margin-left: 10%;
+    margin-right: 4%;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .reviews {
-        display: table;
-        padding: 0;
-        
-    }
-    .review {
-        padding: 8%;
-    }
-    .review-container {
-        display: inline-grid;
-        width: calc(33.33% - 10px);
-        height: min-content;
-        margin-right: 10px;
-    }
-    .r3 {
-        margin-right: 0;
-    }
-    .review .about img {
-        width: 30px;
-    }
-    .review .about .details {
-        left: calc(150%);
-    }
-    
-    .review .about .details h5 {
-        font-size: 12px;
-    }
-    .review .about .details p {
-        font-size: 11px;
-        top: 5px;
-    }
-    .review .msg {
-        font-size: 0.65em;
-        line-height: 14px;
-    }
+  .reviews {
+    display: table;
+    padding: 0;
+  }
+  .review {
+    padding: 8%;
+  }
+  .review-container {
+    display: inline-grid;
+    width: calc(33.33% - 10px);
+    height: min-content;
+    margin-right: 10px;
+  }
+  .r3 {
+    margin-right: 0;
+  }
+  .review .about img {
+    width: 30px;
+  }
+  .review .about .details {
+    left: calc(150%);
+  }
 
-    #review2 {
-        transform: translateY(13px);
-    }
+  .review .about .details h5 {
+    font-size: 12px;
+  }
+  .review .about .details p {
+    font-size: 11px;
+    top: 5px;
+  }
+  .review .msg {
+    font-size: 0.65em;
+    line-height: 14px;
+  }
 
-    #review3 {
-        transform: translateY(26px);
-    }
+  #review2 {
+    transform: translateY(13px);
+  }
+
+  #review3 {
+    transform: translateY(26px);
+  }
 }
 @media screen and (min-width: 800px) {
-    main {
-        padding: 9%;
-    }
-    .container {
-        display: table;
-    }
+  main {
+    padding: 9%;
+  }
+  .container {
+    display: table;
+  }
 
-    .info-container {
-        float: left;
-    }
-    .rt-container {
-        float: right;
-    }
-    .ratings div {
-        min-width: 400px;
-        background-color: hsl(300, 24%, 96%);
-        /* background-color: aqua; */
-        padding: 13px;
-        border-radius: 5px;
-        margin-top: 10px;
-        text-align: left;
-    }
-    .ratings p {
-        margin: 0;
-        margin-left: 2%;
-        margin-right: 3%;
-    }
+  .info-container {
+    float: left;
+  }
+  .rt-container {
+    float: right;
+  }
+  .ratings div {
+    min-width: 400px;
+    background-color: hsl(300, 24%, 96%);
+    /* background-color: aqua; */
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .ratings p {
+    margin: 0;
+    margin-left: 2%;
+    margin-right: 3%;
+  }
 }
 
 @media screen and (min-width: 850px) {
-    .info-container {
-        max-width: 430px;
-    }
-    .info h1 {
-        max-width: 340px;
-    }
-    #r1 {
-        margin-left: -15%;
-    }
-    #r2 {
-        margin-left: -7.5%;
-    }
-    .bg-top-desk {
-        display: block;
-    }
-    .bg-top {
-        display: none;
-    }
+  .info-container {
+    max-width: 430px;
+  }
+  .info h1 {
+    max-width: 340px;
+  }
+  #r1 {
+    margin-left: -15%;
+  }
+  #r2 {
+    margin-left: -7.5%;
+  }
+  .bg-top-desk {
+    display: block;
+  }
+  .bg-top {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .info {
-        font-size: 1.2em;
-    }
-    .review .msg {
-        font-size: 0.7em;
-        line-height: 16px;
-    }
-    .review-container {
-        width: 31%;
-        margin-right: 3.33333333%;
-    }
-    #review3 {
-        margin-right: 0;
-    }
+  .info {
+    font-size: 1.2em;
+  }
+  .review .msg {
+    font-size: 0.7em;
+    line-height: 16px;
+  }
+  .review-container {
+    width: 31%;
+    margin-right: 3.33333333%;
+  }
+  #review3 {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .info-container {
-        max-width: 440px;
-    }
-    .info {
-        font-size: 22px;
-    }
-    .info p {
-        font-size: 16px;
-    }
-    .rt-container {
-        width: 40%;
-    }
-    .ratings div {
-        max-width: 100%;
-        font-size: 16px;
-        padding: 15px;
-        margin-top: 20px;
-    }
-    
-    .review .about img {
-        width: 50px;
-    }
-    
-    .review .msg {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    
-    .review .about .details {
-        left: 70px;
-    }
-    
-    .review .about .details h5 {
-        width: 150px;
-        font-size: 14px;
-        top: -15px;
-    }
-    .review .about .details p {
-        font-size: 14px;
-        width: 130px;
-        top: 15px;
-    }
-    #review2 {
-        transform: translateY(26px);
-    }
+  .info-container {
+    max-width: 440px;
+  }
+  .info {
+    font-size: 22px;
+  }
+  .info p {
+    font-size: 16px;
+  }
+  .rt-container {
+    width: 40%;
+  }
+  .ratings div {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+  }
 
-    #review3 {
-        transform: translateY(52px);
-    }
+  .review .about img {
+    width: 50px;
+  }
+
+  .review .msg {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .review .about .details {
+    left: 70px;
+  }
+
+  .review .about .details h5 {
+    width: 150px;
+    font-size: 14px;
+    top: -15px;
+  }
+  .review .about .details p {
+    font-size: 14px;
+    width: 130px;
+    top: 15px;
+  }
+  #review2 {
+    transform: translateY(26px);
+  }
+
+  #review3 {
+    transform: translateY(52px);
+  }
 }
